@@ -80,9 +80,10 @@ odd_factory_worker = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_metallurgists
@@ -126,9 +127,10 @@ odd_factory_drone = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_metallurgists
@@ -161,9 +163,10 @@ underground_trade_worker = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_specialist_job
+
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 
 	planet_modifier = {
 		planet_amenities_add = 3
@@ -177,10 +180,8 @@ underground_trade_worker = {
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
+				is_xenophile = yes
+				is_materialist = yes
 				has_ethic = ethic_fanatic_xenophile
 				has_trait = trait_charismatic
 			}
@@ -192,8 +193,7 @@ underground_trade_worker = {
 	triggered_planet_modifier = {
 		potential = {
 			has_trait = trait_repugnant
-			has_ethic = ethic_xenophile
-			has_ethic = ethic_fanatic_xenophile
+			is_xenophile = yes
 		}
 		modifier = {
 			planet_amenities_add = -1
@@ -223,17 +223,11 @@ underground_trade_worker = {
 		weight = @specialist_job_weight
 		modifier = {
 			factor = 0.5
-			OR = {
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
-			}
+			is_xenophobe = yes
 		}
 		modifier = {
 			factor = 2
-			OR = {
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
-			}
+			is_xenophile = yes
 		}
 		modifier = {
 			factor = 0.5
@@ -267,9 +261,10 @@ underground_contact_drone = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	planet_modifier = {
 		planet_amenities_add = 3
@@ -494,10 +489,7 @@ dimensional_portal_researcher = {
 				planet = {
 					has_planet_flag = dportal_hell
 				}
-				OR = {
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
-				}
+				is_spiritualist = yes
 			}
 		}
 		modifier = {
@@ -737,10 +729,7 @@ dimensional_portal_researcher_gestalt = {
 				planet = {
 					has_planet_flag = dportal_hell
 				}
-				OR = {
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
-				}
+				is_spiritualist = yes
 			}
 		}
 		modifier = {
@@ -770,9 +759,10 @@ gas_plant_engineer = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_specialist_job
+
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 
 	triggered_planet_modifier = {
 		potential = {
@@ -824,9 +814,10 @@ gas_plant_engineer_gestalt = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_specialist_job
+
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 
 	triggered_planet_modifier = {
 		potential = {
@@ -873,9 +864,10 @@ cave_cleaner = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
-	}
+		}
 
 	triggered_planet_modifier = {
 		potential = {
@@ -927,9 +919,10 @@ cave_cleaner_gestalt = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	triggered_planet_modifier = {
 		potential = {
@@ -976,9 +969,10 @@ titan_hunter = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
-	}
+		}
 
 	planet_modifier = {
 		trade_value_add = 8
@@ -1186,9 +1180,10 @@ turtle_miner = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_miners
@@ -1322,9 +1317,10 @@ turtle_miner_gestalt = {
 		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 
 	resources = {

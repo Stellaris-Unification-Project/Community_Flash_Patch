@@ -67,12 +67,10 @@ building_sacred_nexus = {
 
 	show_tech_unlock_if = {
 		is_spiritualist = yes
-		NOT = {
-			OR = {
+		NOR = {
 				has_valid_civic = civic_death_cult
 				has_valid_civic = civic_death_cult_corporate
-			}
-		}
+}
 	}
 
 	triggered_desc = {
